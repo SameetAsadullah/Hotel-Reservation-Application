@@ -45,7 +45,7 @@ A `Hotel Reservation System` named as `VBook`, coded in `Java and PHP`. Vendor a
       <img src = "https://github.com/SameetAsadullah/Hotel-Reservation-Application/blob/main/extras/vendors-table-ss.png" alt = "" width="800px"/>
     </div>
 7) Open the provided project in `Android Studio`.
-8) Get the `Current IP` of your pc and replace it here:
+8) Get the `Current IP` of your pc and replace it here in the file named as `writerAndReader.java`:
 
 9) `Build the Project` and you are good to go :smiley:
 
