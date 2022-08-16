@@ -25,6 +25,25 @@ A `Hotel Reservation System` named as `VBook`, coded in `Java and PHP`. Vendor a
 4) `Click on Admin Button` infront of MySQL Service and a new tab will open in the browser.
 5) `Create a Database` there with the name `hotel_reservation_application`.
 6) `Create the Following Tables` with the `Same Column Names` as displayed in the screenshots below:
+    <div align="center">
+      <img src = "https://github.com/SameetAsadullah/Hotel-Reservation-Application/blob/main/extras/customers-table-ss.png" alt = "" width="800px"/>
+    </div>
+    <br/>
+    <div align="center">
+      <img src = "https://github.com/SameetAsadullah/Hotel-Reservation-Application/blob/main/extras/hotels-table-ss.png" alt = "" width="800px"/>
+    </div>
+    <br/>
+    <div align="center">
+      <img src = "https://github.com/SameetAsadullah/Hotel-Reservation-Application/blob/main/extras/reservations-table-ss.png" alt = "" width="800px"/>
+    </div>
+    <br/>
+    <div align="center">
+      <img src = "https://github.com/SameetAsadullah/Hotel-Reservation-Application/blob/main/extras/rooms-table-ss.png" alt = "" width="800px"/>
+    </div>
+    <br/>
+    <div align="center">
+      <img src = "https://github.com/SameetAsadullah/Hotel-Reservation-Application/blob/main/extras/vendors-table-ss.png" alt = "" width="800px"/>
+    </div>
 7) Open the provided project in `Android Studio`.
 8) Get the `Current IP` of your pc and replace it here:
 
