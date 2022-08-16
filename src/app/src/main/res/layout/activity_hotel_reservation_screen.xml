@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentationLayer.Hotel_Reservation_Screen">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/hotel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="50dp"
+                android:text="Hotel"
+                android:textColor="#000000"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/reservation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hotel"
+                android:layout_marginStart="80dp"
+                android:text="Reservation"
+                android:textColor="#000000"
+                android:textSize="40sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Successful"
+                android:textSize="40sp"
+                android:textColor="#000000"
+                android:layout_below="@id/reservation"
+                android:layout_marginStart="170dp"
+                android:id="@+id/sucessful"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hotel Name: "
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_below="@id/sucessful"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="40dp"
+                android:id="@+id/hotel_name"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_hotel_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sucessful"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="50dp"
+                android:layout_toEndOf="@+id/hotel_name"
+                android:textSize="16sp"
+                android:textColor="#373737"/>
+
+            <ImageView
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tv_hotel_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="70dp"
+                android:background="#000000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Rooms: "
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_below="@id/line1"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="40dp"
+                android:id="@+id/total_rooms"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_total_rooms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line1"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="50dp"
+                android:layout_toEndOf="@id/total_rooms"
+                android:textSize="16sp"
+                android:textColor="#373737"/>
+
+            <ImageView
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tv_total_rooms"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="70dp"
+                android:background="#000000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Price: "
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_below="@id/line2"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="40dp"
+                android:id="@+id/total_price"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_total_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line2"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="50dp"
+                android:layout_toEndOf="@id/total_price"
+                android:textSize="16sp"
+                android:textColor="#373737"/>
+
+            <ImageView
+                android:id="@+id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tv_total_price"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="70dp"
+                android:background="#000000"/>
+
+            <TextView
+                android:id="@+id/rooms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="30dp"
+                android:text="Rooms"
+                android:textColor="#000000"
+                android:textSize="40sp"
+                android:layout_below="@+id/tv_total_price"/>
+
+            <TextView
+                android:id="@+id/alloted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rooms"
+                android:layout_marginStart="100dp"
+                android:text="Alloted"
+                android:textColor="#000000"
+                android:textSize="40sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Room Numbers: "
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_below="@id/alloted"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="40dp"
+                android:id="@+id/rooms_alloted"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_rooms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/alloted"
+                android:layout_toEndOf="@id/rooms_alloted"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="50dp"
+                android:textSize="16sp"
+                android:textColor="#373737"/>
+
+            <ImageView
+                android:id="@+id/line4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tv_rooms"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="70dp"
+                android:background="#000000"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/line4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="70dp"
+                android:id="@+id/END_button">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/main_screen_button_bg"
+                    android:backgroundTint="#000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Finish"
+                    android:textColor="#FFFFFF"
+                    android:layout_centerInParent="true"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

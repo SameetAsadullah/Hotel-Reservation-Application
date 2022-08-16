@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentationLayer.Reserve_Screen">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/back_button"
+                android:backgroundTint="#727272" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Reserve Now"
+                android:textColor="#000000"
+                android:textSize="40sp"
+                android:id="@+id/top_text"
+                android:layout_below="@id/back_button"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/top_text"
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="160dp"
+                android:id="@+id/location">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/login_screen_et_bg"/>
+
+                <EditText
+                    android:id="@+id/Location_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:background="@null"
+                    android:hint="Location" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/location"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="160dp"
+                android:id="@+id/no_of_persons">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/login_screen_et_bg"/>
+
+                <EditText
+                    android:id="@+id/Persons_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:background="@null"
+                    android:hint="No of Persons" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/no_of_persons"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:id="@+id/room_type">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Room Type: "
+                    android:textColor="#000000"
+                    android:textSize="16sp"/>
+
+                <CheckBox
+                    android:id="@+id/Single_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Single"
+                    android:textColor="#000000"
+                    android:checked="true"
+                    android:layout_marginStart="10dp"/>
+
+                <CheckBox
+                    android:id="@+id/Double_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Double"
+                    android:textColor="#000000"
+                    android:checked="true"
+                    android:layout_marginStart="10dp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@id/room_type"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:background="#E9E9E9" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/line"
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="80dp"
+                android:id="@+id/check_in_date">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/login_screen_et_bg"/>
+
+                <EditText
+                    android:id="@+id/Check_in_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="Check-in-Date (dd/MM/yyyy)" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/check_in_date"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="80dp"
+                android:id="@+id/check_out_date">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/login_screen_et_bg"/>
+
+                <EditText
+                    android:id="@+id/Check_out_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="Check-out-Date (dd/MM/yyyy)" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/check_out_date"
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="80dp"
+                android:id="@+id/submit_button">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/main_screen_button_bg"
+                    android:backgroundTint="#000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SUBMIT"
+                    android:textColor="#FFFFFF"
+                    android:layout_centerInParent="true"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/submit_button"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
