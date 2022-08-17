@@ -24,7 +24,7 @@ A `Hotel Reservation System` named as `VBook`, coded in `Java and PHP`. Vendor a
 3) Open Xampp and `Run Apache and MySQL Services`.
 4) `Click on Admin Button` infront of MySQL Service and a new tab will open in the browser.
 5) `Create a Database` there with the name `hotel_reservation_application`.
-6) `Create the Following Tables` with the `Same Column Names` as displayed in the screenshots below:
+6) `Create the Following Tables` with the `Same Table Names` and `Same Column Names` as displayed in the screenshots below:
     
     <div align="center">
       <img src = "https://github.com/SameetAsadullah/Hotel-Reservation-Application/blob/main/extras/customers-table-ss.png" alt = "" width="800px"/>
