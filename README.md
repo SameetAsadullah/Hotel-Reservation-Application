@@ -1,7 +1,7 @@
 <h1 align="center">Hotel Reservation Application</h1>
 
 ### Description
-A `Hotel Reservation System` named as `VBook`, coded in `Java and PHP`. Vendor and Customer are the `Two Users` of this project and are described below:
+VBook is a Java Android hotel marketplace backed by a PHP API. It separates customer booking workflows from vendor inventory management:
 
 #### Customer
 - Can login
