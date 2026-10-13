@@ -1,82 +1,64 @@
-<h1 align="center">Hotel Reservation Application</h1>
+# VBook Android
 
-### Description
-VBook is a Java Android hotel marketplace backed by a PHP API. It separates customer booking workflows from vendor inventory management:
+An Android hotel marketplace backed by a PHP/MySQL API. VBook separates customer booking workflows from vendor inventory management in a single full-stack repository.
 
-#### Customer
-- Can login
-- Can SignUp
-- Can Search Hotels
-- Can Reserve Rooms
+![Android](https://img.shields.io/badge/Android-Java-3DDC84?logo=android&logoColor=white)
+![PHP](https://img.shields.io/badge/API-PHP-777BB4?logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/database-MySQL-4479A1?logo=mysql&logoColor=white)
+[![Checks](https://github.com/SameetAsadullah/vbook-android/actions/workflows/quality.yml/badge.svg)](https://github.com/SameetAsadullah/vbook-android/actions/workflows/quality.yml)
 
-#### Vendor
-- Can login
-- Can SignUp
-- Can Advertise Hotels
-- Can view history
+## Capabilities
 
-### Manual
-1) [Download](https://downloadsapachefriends.global.ssl.fastly.net/8.1.6/xampp-windows-x64-8.1.6-0-VS16-installer.exe?from_af=true) and install `XAMPP` from the given link (`C:\xampp` folder should be there after installation).
-    ```
-    https://downloadsapachefriends.global.ssl.fastly.net/8.1.6/xampp-windows-x64-8.1.6-0-VS16-installer.exe?from_af=true
-    ```
-2) Paste the folder named as `PHP_Files` present [Here](https://github.com/SameetAsadullah/vbook-android/blob/main/src/PHP_Files/) in `C:\xampp\htdocs` folder.
-3) Open Xampp and `Run Apache and MySQL Services`.
-4) `Click on Admin Button` infront of MySQL Service and a new tab will open in the browser.
-5) `Create a Database` there with the name `hotel_reservation_application`.
-6) `Create the Following Tables` with the `Same Table Names` and `Same Column Names` as displayed in the screenshots below:
-    
-    <div align="center">
-      <img src = "https://github.com/SameetAsadullah/vbook-android/blob/main/extras/customers-table-ss.png" alt = "" width="800px"/>
-    </div>
-    <br/>
-    <div align="center">
-      <img src = "https://github.com/SameetAsadullah/vbook-android/blob/main/extras/hotels-table-ss.png" alt = "" width="800px"/>
-    </div>
-    <br/>
-    <div align="center">
-      <img src = "https://github.com/SameetAsadullah/vbook-android/blob/main/extras/reservations-table-ss.png" alt = "" width="800px"/>
-    </div>
-    <br/>
-    <div align="center">
-      <img src = "https://github.com/SameetAsadullah/vbook-android/blob/main/extras/rooms-table-ss.png" alt = "" width="800px"/>
-    </div>
-    <br/>
-    <div align="center">
-      <img src = "https://github.com/SameetAsadullah/vbook-android/blob/main/extras/vendors-table-ss.png" alt = "" width="800px"/>
-    </div>
-    
-7) Open the provided project in `Android Studio`.
-8) Get the `Current IP` of your pc and replace it here in the file named as `writerAndReader.java`:
-    
-    <div align="center">
-      <img src = "https://github.com/SameetAsadullah/vbook-android/blob/main/extras/change-ip-ss.png" alt = "" width="800px"/>
-    </div>
-    
-9) `Build the Project` and you are good to go :smiley:
+### Customers
 
-### Working Screenshots
-<div align="center">
-  <img src = "https://github.com/SameetAsadullah/vbook-android/blob/main/extras/splash-screen-ss.png" alt = "" width="200px"/>
-  <img src = "https://github.com/SameetAsadullah/vbook-android/blob/main/extras/main-screen-ss.png" alt = "" width="200px"/>
-  <img src = "https://github.com/SameetAsadullah/vbook-android/blob/main/extras/login-ss.png" alt = "" width="200px"/>
-  <img src = "https://github.com/SameetAsadullah/vbook-android/blob/main/extras/register-ss.png" alt = "" width="200px"/>
-</div>
-<br/>
-<div align="center">
-  <img src = "https://github.com/SameetAsadullah/vbook-android/blob/main/extras/vendor-options-ss.png" alt = "" width="200px"/>
-  <img src = "https://github.com/SameetAsadullah/vbook-android/blob/main/extras/hotel-registration-ss.png" alt = "" width="200px"/>
-  <img src = "https://github.com/SameetAsadullah/vbook-android/blob/main/extras/registered-hotels-ss.png" alt = "" width="200px"/>
-  <img src = "https://github.com/SameetAsadullah/vbook-android/blob/main/extras/customer-options-ss.png" alt = "" width="200px"/>
-</div>
-<br/>
-<div align="center">
-  <img src = "https://github.com/SameetAsadullah/vbook-android/blob/main/extras/reserve-ss.png" alt = "" width="200px"/>
-  <img src = "https://github.com/SameetAsadullah/vbook-android/blob/main/extras/hotel-selection-ss.png" alt = "" width="200px"/>
-  <img src = "https://github.com/SameetAsadullah/vbook-android/blob/main/extras/hotel-reservation-ss.png" alt = "" width="200px"/>
-  <img src = "https://github.com/SameetAsadullah/vbook-android/blob/main/extras/reservations-ss.png" alt = "" width="200px"/>
-</div>
+- Create an account and sign in.
+- Browse registered hotels and available rooms.
+- Reserve rooms and review reservations.
 
-### Contributors
-- [Sameet Asadullah](https://github.com/SameetAsadullah) 
+### Vendors
+
+- Create a vendor account and sign in.
+- Register hotels and room inventory.
+- Review listed properties and reservation activity.
+
+## Repository layout
+
+```text
+api/       PHP endpoints for authentication, hotels, rooms, and reservations
+mobile/    Complete Gradle Android project
+docs/      Architecture and maintenance notes
+extras/    Application and database screenshots
+```
+
+See [Architecture](docs/ARCHITECTURE.md) for the client/API responsibilities and data flow.
+
+## Local setup
+
+1. Install PHP, MySQL, and a local web server.
+2. Create a MySQL database named `hotel_reservation_application` using the table structures shown in `extras`.
+3. Serve the files in `api` from your web server.
+4. Open `mobile` in Android Studio.
+5. Set the development server address in `mobile/app/src/main/java/com/sameetasadullah/i180479_i180531/dataLayer/writerAndReader.java`.
+6. Sync Gradle and run the application on an emulator or Android device.
+
+The checked-in server address documents the original development environment. A deployed version should use build-time configuration and HTTPS.
+
+## Screenshots
+
+| Entry | Customer workflow | Vendor workflow |
+| --- | --- | --- |
+| ![Login](extras/login-ss.png) | ![Hotel selection](extras/hotel-selection-ss.png) | ![Hotel registration](extras/hotel-registration-ss.png) |
+| ![Main screen](extras/main-screen-ss.png) | ![Room reservation](extras/hotel-reservation-ss.png) | ![Registered hotels](extras/registered-hotels-ss.png) |
+
+## Project status
+
+This repository preserves the original Android and PHP implementation. Production deployment would require authenticated API sessions, prepared SQL statements, password hashing, HTTPS, environment-based configuration, and dependency upgrades.
+
+## Contributors
+
+- [Sameet Asadullah](https://github.com/SameetAsadullah)
 - [Tayyab Ali](https://github.com/DarkDragz)
+
+## License
+
+Licensed under the [MIT License](LICENSE).

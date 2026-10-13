@@ -1,0 +1,30 @@
+name: Android and PHP checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.3"
+          coverage: none
+
+      - name: Lint PHP API
+        run: find api -name '*.php' -print0 | xargs -0 -n1 php -l
+
+      - name: Validate repository structure
+        run: python3 scripts/validate_repository.py
+
+      - name: Check whitespace
+        run: git diff --check
